@@ -164,7 +164,7 @@ const isRTL = LanguageCheck();    const formKeys = {
                 <CommonLineView />
               </View>
               <RowView style={[styles.footerComponentView, { flexDirection: isRTL ? 'row-reverse' : 'row' }]}>
-                <SocialMediaLogin
+                {/* <SocialMediaLogin
                   btnKey={'fb'}
                   label={t('labels.facebook')}
                   image={
@@ -173,7 +173,7 @@ const isRTL = LanguageCheck();    const formKeys = {
                     </View>
                   }
                   onPress={() => { }}
-                />
+                /> */}
                 <SocialMediaLogin
                   label={t('labels.google')}
                   image={
@@ -232,7 +232,10 @@ const styles = StyleSheet.create({
   },
   passwordIconStyle: { alignItems: 'center', justifyContent: 'center' },
   borderLineStyle: { paddingTop: 10 },
-  footerComponentView: { paddingTop: 30 }
+  footerComponentView: { paddingTop: 30,
+    margin:'auto',
+    justifyContent:'center'
+   }
 });
 
 

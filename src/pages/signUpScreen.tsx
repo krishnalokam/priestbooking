@@ -153,7 +153,7 @@ const isRTL = LanguageCheck();    const formKeys = {
             </View>
             <View>
               <View style={[styles.infoTextViewStyle,{flexDirection:isRTL?'row-reverse':'row'}]}>
-                <H9fontRegularGray>{t('labels.alreadyAccount')} </H9fontRegularGray>
+                <H9fontRegularGray>{t('labelsF.alreadyAccount')} </H9fontRegularGray>
                 <TouchableOpacity
                   onPress={() =>
                     navigation.navigate(screenName.SignInScreen as any)
